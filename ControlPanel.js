@@ -14,11 +14,15 @@ function ControlPanel() {
   const toggler = () => {
     toggle ? setToggle(false) : setToggle(true);
   };
+//    const myFunction = () => {
+//       write function logic to set all alarms to false  
+//    } 
   return (
     <div className="controlpanel">
       <div className="alarm-toggles ">
         <div>
           <h4 className="master-control">
+            // Master Control <Switch onChange={myFunction} className="float-right pl-5"/>
             Master Control <Switch className="float-right pl-5" />
           </h4>
         </div>
@@ -30,7 +34,7 @@ function ControlPanel() {
                 <IoIosAperture />
                 <span>{name}</span>
                 <span className="toggle" onClick={toggler}>
-                  {togggle}
+                  {toggle}
                 </span>
               </h4>
             </article>
