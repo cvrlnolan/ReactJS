@@ -5,6 +5,7 @@ export const alarms = [
     id: 1,
     name: "Alarm 1",
     togggle: <Switch />,
+//     togggle: <Switch checked={true or false}/>
   },
   {
     id: 2,
